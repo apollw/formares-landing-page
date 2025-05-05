@@ -1,0 +1,26 @@
+.footer {
+  background-color: var(--primary-color); 
+  color: var(--secondary-color); 
+  padding: 20px 0;
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .footer-phrase {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+
+  .footer-info {
+    font-size: 14px;
+    
+    p {
+      margin: 5px 0;
+    }
+  }
+}

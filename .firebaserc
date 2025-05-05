@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "formares-consultoria",
+    "formares": "formares-consultoria"
+  },
+  "targets": {},
+  "etags": {}
+}

@@ -1,0 +1,33 @@
+/* Importa a fonte sem serifa para o corpo */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+/* Importa a fonte cursiva para o header */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+/* Variáveis de cor globais */
+:root {
+  --primary-color: #1A8C49;       
+  --secondary-color: #ffffff;     
+  --background-color: #f8f8f8;      
+  --text-color: #333333;          
+  
+  --header-font-size: 32px;       
+  --body-font-size: 22px;         
+  --heading-font-size: 24px;      
+}
+
+/* Estilos globais */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--body-font-size);
+}
+
+/* Definindo estilos para títulos */
+h2, h3, h4, h5, h6 {
+  font-size: var(--heading-font-size);
+  margin: 0;
+  padding: 0;
+}

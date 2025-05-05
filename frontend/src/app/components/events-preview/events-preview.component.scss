@@ -1,0 +1,107 @@
+.events-preview {
+  padding: 60px 0;
+  background-color: var(--secondary-color);
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Em telas maiores, centraliza os cards */
+  @media (min-width: 601px) {
+    .cards {
+      justify-content: center;
+    }
+  }
+
+  /* Em telas menores, mantém os cards alinhados à esquerda para facilitar o scroll */
+  @media (max-width: 600px) {
+    .cards {
+      justify-content: flex-start;
+      gap: 10px;
+      padding: 0 10px 20px;
+    }
+  }
+
+  .card {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+    width: 300px;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card-caption {
+    padding: 15px;
+  }
+
+  .card-caption h3 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+  }
+
+  .card-caption p {
+    font-size: 20px;
+    color: #555;
+    margin: 0;
+  }
+
+  /* Ajustes para telas menores */
+  @media (max-width: 600px) {
+    .card {
+      width: 90%; /* Cada card ocupa 90% da largura da tela */
+      margin: 0 auto;
+    }
+    
+    .card img {
+      height: auto;
+    }
+    
+    .card-caption h3 {
+      font-size: 18px;
+    }
+    
+    .card-caption p {
+      font-size: 14px;
+    }
+  }
+}

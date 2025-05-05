@@ -1,0 +1,124 @@
+.about {
+  padding: 30px 0;
+  background-color: var(--secondary-color); 
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 36px;
+    color: var(--primary-color); 
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 22px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .about-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0;
+  }
+
+  .info-item {
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .info-item i {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  .info-item h3 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 10px 0;
+  }
+
+  .info-item p {
+    font-size: 22px;
+    color: #555;
+  }
+}
+
+.about img {
+  display: block;       /* Remove o espaço extra abaixo da imagem */
+  max-width: 100%;      /* A imagem não ultrapassará a largura do contêiner */
+  height: auto;         /* Mantém a proporção original */
+  margin: 0 auto;       /* Centraliza a imagem */
+}
+
+
+.founder-section {
+  padding: 60px 0;
+  background-color: var(--primary-color);
+  text-align: center;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    font-size: 36px;
+    color: var(--secondary-color); 
+    margin-bottom: 40px;
+  }
+
+  .founder-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .founder-photo {
+    flex: 0 0 300px;
+    max-width: 300px;
+    margin: 0 20px 20px 0;
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+  }
+
+  .founder-description {
+    flex: 1;
+    min-width: 280px;
+    text-align: justify;
+
+    h3 {
+      font-size: 28px;
+      color: var(--secondary-color); 
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 22px;
+      color: var(--secondary-color); 
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+  }
+}
