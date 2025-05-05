@@ -1,7 +1,8 @@
 <section id="events" class="events-preview">
   <div class="container">
     <h2>Eventos Realizados</h2>
-    <div class="cards">
+
+    <!-- <div class="cards">
       <div class="card">
         <img src="/images/formares-evento-1.png" alt="Evento 1">
         <div class="card-caption">
@@ -23,7 +24,18 @@
           <p>Evento dedicado aos desafios e à atuação do Conselho Tutelar, com o objetivo de fortalecer a proteção integral e capacitar profissionais para uma atuação mais efetiva na defesa dos direitos da infância e adolescência, na cidade de Colinas/MA.</p>
         </div>
       </div>
+    </div> -->
+
+    <div class="cards">
+      <div class="card" *ngFor="let e of events">
+        <img [src]="'/images/'+e.img" [alt]="e.title" loading="lazy">
+        <div class="card-caption">
+          <h3>{{ e.title }}</h3>
+          <p>{{ e.body }}</p>
+        </div>
+      </div>
     </div>
+
   </div>
 </section>
 
