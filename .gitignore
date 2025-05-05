@@ -8,6 +8,7 @@
 
 # Node
 frontend/node-modules/
+backend/node-modules/
 npm-debug.log
 yarn-error.log
 
